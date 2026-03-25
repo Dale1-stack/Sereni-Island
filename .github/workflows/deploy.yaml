@@ -16,7 +16,8 @@ jobs:
         uses: docker/setup-buildx-action@v2
 
       - name: Build Docker image
-        run: docker build -t SERENI-ISLAND-APP .
+        run: docker build -t sereni_island_app
+         .
 
       - name: Run container test
-        run: docker run -d -p 3000:3000 SERENI-ISLAND-APP
+        run: docker run -d -p 3000:3000 sereni_island_app
